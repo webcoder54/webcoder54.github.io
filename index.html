@@ -7,6 +7,8 @@ None of the things that "happened" are real except for the National Championship
 
 THANK YOU Khan Academy for teaching me everything I know, and thank to Mrs. Mackin for starting Khan Acdemy and introducing it to me.
 
+The Comment Function comes from A KHAN ACADEMY template and all credit for that goes to KHAN ACADEMY, but i did complete the Khan Acdemy challenge so I did the code and then copied it to do this
+
 This Contains HARRY POTTER SPOILERS
 YOU HAVE BEEN WARNED!!
 -->
@@ -360,9 +362,11 @@ YOU HAVE BEEN WARNED!!
             
         </table>
         <ul>
-            <li> From: <input type = 'text' id = 'comment-input'> </li>
-            <li> Comment <input type = 'text' id = 'comment-input'> </li>
+            <li> From: <input type = 'text' id = 'from'</li>
+            <li> Comment: <input type = 'text' id = 'comment'> </li>
 </ul>
+<button id = 'comment-button'> Comment it </button>
+<p> Your Comment: <span id = 'story'> </span></p>
 <!-- Extra Comment Stuff -->
           <h2 id = 'reward'> <a href = 'https://www.amazon.com'> Reward for comment!! </a> </h2>
         <h2>
@@ -373,7 +377,19 @@ YOU HAVE BEEN WARNED!!
         
         <script src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
         <script>
-        
+            
+        var commentButton = document.getElementById('comment-button');
+        var commentIt = function() {
+            var storyDiv = document.getElementById("story");
+            storyDiv.innerHTML = "??Your story here";
+             commentButton.addEventListener('click', commentIt);
+             var from  = document.getElementById ('from').value;
+            var comment = document.getElementById ('comment').value;
+            
+            storyDiv.textContent = 'Comment: ' + comment + '  From: ' + from;
+        };
+        commentButton.addEventListener('click', commentIt);
+            
             
         </script>
     </body>
