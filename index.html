@@ -179,6 +179,11 @@ YOU HAVE BEEN WARNED!!
             background-color:red;
             color:white;
         }
+        .comment-function {
+            position:absolute;
+            left:400px;
+        
+        }
         </style>
     <body>
         
@@ -362,11 +367,11 @@ YOU HAVE BEEN WARNED!!
             
         </table>
         <ul>
-            <li> From: <input type = 'text' id = 'from'</li>
-            <li> Comment: <input type = 'text' id = 'comment'> </li>
+            <li> From: <input type = 'text' id = 'from' class = 'comment-function'</li>
+            <li> Comment: <input type = 'text' id = 'comment2' class = 'comment-function'> </li>
 </ul>
-<button id = 'comment-button'> Comment it </button>
-<p> Your Comment: <span id = 'story'> </span></p>
+<button id = 'comment-button' class = 'comment-function'> Comment it </button>
+<p class = 'comment-function'> Your Comment: <span id = 'story'> </span></p>
 <!-- Extra Comment Stuff -->
           <h2 id = 'reward'> <a href = 'https://www.amazon.com'> Reward for comment!! </a> </h2>
         <h2>
@@ -384,7 +389,7 @@ YOU HAVE BEEN WARNED!!
             storyDiv.innerHTML = "??Your story here";
              commentButton.addEventListener('click', commentIt);
              var from  = document.getElementById ('from').value;
-            var comment = document.getElementById ('comment').value;
+            var comment = document.getElementById ('comment2').value;
             
             storyDiv.textContent = 'Comment: ' + comment + '  From: ' + from;
         };
