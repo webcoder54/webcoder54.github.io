@@ -181,11 +181,15 @@ YOU HAVE BEEN WARNED!!
         }
         .comment-function {
             position:absolute;
-            left:900px;
+            left:1000px;
         
         }
         .comment-lister {
-            left: 850px;
+            left: 950px;
+        }
+        #commentF {
+        down: 300px;
+        
         }
         </style>
     <body>
@@ -373,8 +377,9 @@ YOU HAVE BEEN WARNED!!
             <li> <span class = 'input-lister'>From:</span> <input type = 'text' id = 'from' class = 'comment-function'</li>
             <li  ><span class = 'input-lister'> Comment: </span> <input type = 'text' id = 'comment2' class = 'comment-function' > </li>
 </ul>
+<!-- Button and where omment appears -->
 <button id = 'comment-button' class = 'comment-function'> Comment it </button>
-<p class = 'comment-function'> Your Comment: <span id = 'story'> </span></p>
+<p class = 'comment-function' id ='commentF'> Your Comment: <span id = 'story'> </span></p>
 <!-- Extra Comment Stuff -->
           <h2 id = 'reward'> <a href = 'https://www.amazon.com'> Reward for comment!! </a> </h2>
         <h2>
@@ -394,7 +399,7 @@ YOU HAVE BEEN WARNED!!
              var from  = document.getElementById ('from').value;
             var comment = document.getElementById ('comment2').value;
             
-            storyDiv.textContent = 'Comment: ' + comment + '  From: ' + from;
+            storyDiv.textContent = from + ' ' + comment + '.' ;
         };
         commentButton.addEventListener('click', commentIt);
             
