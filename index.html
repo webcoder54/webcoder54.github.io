@@ -485,6 +485,10 @@ https://www.khanacademy.org
                 <td> LazarBeam
                     <td> i hate lachlan
                 </tr>
+                <tr> 
+            <td id ='from2'>
+                <td id = 'what'>
+            </td>
             </tbody>
             
         </table>
@@ -497,7 +501,7 @@ https://www.khanacademy.org
 
 
 <button id = 'comment-button' class = 'comment-function'> Comment it </button>
-<p class = 'comment-function' id ='commentF'> Your Comment: <span id = 'story'> </span></p>
+<p class = 'comment-function' id ='commentF'> Your Comment: </p>
 
 
 <!-- Extra Comment Stuff -->
@@ -510,9 +514,17 @@ https://www.khanacademy.org
         <script>
             
         var commentButton = document.getElementById('comment-button');
-        var commentIt = function() {
-            var storyDiv = document.getElementById("story");
+        var commentItFrom = function() {
+            var storyDiv = document.getElementById("from2");
             storyDiv.innerHTML = "??Your story here";
              commentButton.addEventListener('click', commentIt);
-             var from  = document.getElementById ('from').value;
+             var from  = document.getElementById ('from2').value;
             var comment = document.getElementById ('comment2').value;
+            
+            var commentButton = document.getElementById('comment-button');
+        var commentItWhat = function() {
+            var storyDiv = document.getElementById("what");
+            storyDiv.innerHTML = "??Your story here";
+             commentButton.addEventListener('click', commentIt);
+             
+            var comment = document.getElementById ('what').value;
