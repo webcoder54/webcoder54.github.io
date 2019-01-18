@@ -514,12 +514,11 @@ https://www.khanacademy.org
         var commentButton = document.getElementById('comment-button');
         var commentIt = function() {
             var storyDiv = document.getElementById("story");
-            storyDiv.innerHTML = "??Your story here";
-             libButton.addEventListener('click', commentIt);
-             var comment  = document.getElementById ('comment2').value;
-            var from = document.getElementById ('from').value;
+            commentButton.addEventListener('click', commentIt);
+             var $comment  = document.getElementById ('comment2').value;
+            var $from = document.getElementById ('from').value;
             
-            storyDiv.textContent = from + '          ' + comment ;
+            storyDiv.textContent = $from + '          ' + $comment ;
         };
         commentButton.addEventListener('click', commentIt);
             
