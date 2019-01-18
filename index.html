@@ -516,18 +516,20 @@ https://www.khanacademy.org
             
         var commentButton = document.getElementById('comment-button');
         var commentItFrom = function() {
-            var storyDiv = document.getElementById("from");
-            storyDiv.innerHTML = "??Your story here";
-             commentButton.addEventListener('click', commentItFrom);
-             var from  = document.getElementById ('from').value;
+            var storyDiv = document.getElementById("from2");
+            var $from  = document.getElementById ('from').value;
+            storyDiv.innerHTML = $from;
+             
+             
         }
             
             var commentButton2 = document.getElementById('comment-button');
         var commentItWhat = function() {
-            var storyDiv2 = document.getElementById("comment2");
-            storyDiv2.innerHTML = "??Your story here";
+            var storyDiv2 = document.getElementById("what");
+            var $what = document.getElementById ('comment2').value;
+            storyDiv2.innerHTML = $what;
              
-             var what = document.getElementById ('comment2').value;
+             
         }
         commentButton2.addEventListener('click', commentItWhat);
         commentButton.addEventListener('click', commentItFrom);
