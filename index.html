@@ -374,7 +374,7 @@ https://www.khanacademy.org
         
     
     </form>
-        <div id = 'picPLACE'> Picture: </div>
+        
         <!-- Me bored -->
         <h2 id = 'thir-post' class = 'post'> Me Bored </h2>
         <h6 class = 'posted'> Posted on January 17, 2019 </h6>
@@ -545,7 +545,7 @@ https://www.khanacademy.org
         };
         commentButton.addEventListener('click', commentIt);
             
-            var placeImages = {
+            var placeImages2 = {
                 'LMR': 'https://media-cdn.tripadvisor.com/media/photo-s/09/89/9f/9d/lone-mountain-guest-ranch.jpg',
                 'DisneyWorld': 'https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1440/540/75/dam/wdpro-assets/tickets/WDW_List.jpg?1547579057083',
                 'Baltimore' : 'https://simg1.imagesbn.com/pimages/store/photo/s2/2881.jpg'
@@ -555,10 +555,10 @@ https://www.khanacademy.org
                 event.preventDefault();
                 var $picplace = $(this).find('[name=place]')
                 var picplace = $picplace.val();
-                var img = $('<img>');
-                img.width(200)
-                img.attr('src', placeImages[picplace])
-                img.appendTo('picPLACE')
+                var $img = $('<img>');
+                $img.width(200)
+                $img.attr('src', placeImages2[picplace])
+                $img.appendTo('body')
                 
             });
             
