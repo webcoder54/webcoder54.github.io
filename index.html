@@ -239,6 +239,9 @@ https://www.khanacademy.org
             left: 1000px;
         
         }
+        .awesome {
+        text-align:center;
+        }
         </style>
     <body>
         
@@ -371,6 +374,7 @@ https://www.khanacademy.org
         
     
     </form>
+        <div id = 'picPLACE'> </div>
         <!-- Me bored -->
         <h2 id = 'thir-post' class = 'post'> Me Bored </h2>
         <h6 class = 'posted'> Posted on January 17, 2019 </h6>
@@ -554,7 +558,7 @@ https://www.khanacademy.org
                 var img = $('<img>');
                 img.width(200)
                 img.attr('src', placeImages[picplace])
-                img.appendTo('body')
+                img.appendTo('picPLACE')
                 
             });
             
