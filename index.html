@@ -213,7 +213,7 @@ https://www.khanacademy.org
             background-color:white;
         }
         #CT {
-        
+        float:left;
             
         }
         #spoiler {
@@ -257,6 +257,7 @@ https://www.khanacademy.org
             <li class = 'content'> <a href = '#ten-post'> Trouble with a website </a> </li>
             <li class = 'content'> <a href = '#eleven-post'> Tannerite </a> </li>
             <li class = 'content'> <a href = '#twelve-post'> Amazing Places </a> </li>
+            <li class = 'content'> <a href = '#pic-sel'> Pick a Place </a> </li>
             <li class = 'content'> <a href = '#comment'> Comments! </a> </li>
             
             
@@ -314,7 +315,7 @@ https://www.khanacademy.org
         <h2 id = 'seven-post' class = 'post'>Harry Potter Binge!!</h2>
         <h6 class = 'posted'>Posted on March 2,2019</h6>
         <p id = 'info-seven'>I love <span id = 'dot'>Harry Potter</span> and it is my favorite book. Last week I binged the books for my sixth time, and today I will binge the movies.<span id = 'spoiler'> Do not read if you have not read the books.</span> I am on the seventh movie part two, and...oh come Neville you can kill Nagini come on. Sorry for the interuption I was about to say that Harry potter is my favorite series, and leave in the comments what your favorite book is. Personally my favorite book is the sixth, The Half-Blood Prince, beacuse it reveals a lot about Voldemort and who he was. I'll see you on my next post.   </p>
-        <img src = 'https://www.irishtimes.com/polopoly_fs/1.3170107.1501253408!/image/image.jpg_gen/derivatives/box_620_330/image.jpg' alt = 'Harry Potter'>
+
         <!-- Scholar's Bowl -->
        
         <h2 id = 'eight-post' class = 'post'> Scholar's Bowl Trip </h2>
@@ -353,6 +354,22 @@ https://www.khanacademy.org
     <li> North Georgia Mountains </li>
     <li> Atlanta </li>
 </ol>
+<form id = 'pic-sel'> 
+    <label>
+        Places
+        <select name = 'place'>
+            <option value = 'disney'> Disney World </option>
+            <option value = 'LMR'> LMR </option>
+            <option value = 'baltimore' > Baltimore </option>
+            
+            
+        </select>
+        <button type = 'submit'>Go!</button>
+        
+    </label>
+    </form>
+
+
         <!-- comments -->
         <h2 id = 'comment'> Comments </h2>
         <table id ='comment-table'>
@@ -516,8 +533,25 @@ https://www.khanacademy.org
             storyDiv.textContent = from + '     ' + comment + '.' ;
         };
         commentButton.addEventListener('click', commentIt);
+            var placeImages = {
+                'LMR': 'https://media-cdn.tripadvisor.com/media/photo-s/09/89/9f/9d/lone-mountain-guest-ranch.jpg',
+                'DisneyWorld': 'https://millionmilesecrets.com/wp-content/uploads/magic-kingdom-disney-world-vip-tour-2.jpg',
+                'Baltimore' : 'http://www.trbimg.com/img-58d349a8/turbine/bs-bz-baltimore-population-loss-jumps-20170322'
+                
+            };
+            $('#pic-sel').on('submit', function(event){
+                event.preventDefault();
+                var $picplace = $(this).find('[name=place]')
+                var picplace = $picplace.val();
+                var img = $('<img>');
+                img.width(200)
+                img.attr('src', placeImages[picplace])
+                img.appendTo('body')
+                
+            });
             
             
         </script>
     </body>
 </html>
+<!-- Thank you for Watching!-->
