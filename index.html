@@ -260,7 +260,7 @@ https://www.khanacademy.org
             <li class = 'content'> <a href = '#eleven-post'> Tannerite </a> </li>
             <li class = 'content'> <a href = '#twelve-post'> Amazing Places </a> </li>
             <li class = 'content'> <a href = '#comment'> Comments! </a> </li>
-            a
+            
             
         </ul>
         
@@ -526,6 +526,8 @@ https://www.khanacademy.org
         var commentItWhat = function() {
             var storyDiv2 = document.getElementById("what");
             storyDiv2.innerHTML = "??Your story here";
-             commentButton2.addEventListener('click', commentItWhat);
-             var comment2 = document.getElementById ('what').value;
+             
+             var what = document.getElementById ('what').value;
         }
+        commentButton2.addEventListener('click', commentItWhat);
+        commentButton.addEventListener('click', commentItFrom);
