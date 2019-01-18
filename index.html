@@ -3,6 +3,7 @@
 Most(not all) of this is not real
 THANK YOU Khan Academy for teaching me everything I know, and thank to Mrs. Mackin for starting Khan Acdemy and introducing it to me.
 The Comment Function comes from A KHAN ACADEMY template and all credit for that goes to KHAN ACADEMY, but i did complete the Khan Acdemy challenge so I did the code and then copied it to do this
+same for comments as with forms
 This Contains HARRY POTTER SPOILERS
 I also learned the Video function from Codecademy
 I also learned the form function from Khan Acdemy, but did a challenge for the code.
@@ -371,8 +372,6 @@ https://www.khanacademy.org
         </select>
         </label>
         <button type = 'submit'>Go!</button>
-        
-    
     </form>
         
         <!-- Me bored -->
@@ -557,12 +556,12 @@ https://www.khanacademy.org
             };
             $('#pic-sel').on('submit', function(event){
                 event.preventDefault();
-                var $picplace = $(this).find('[name=place]')
+                var $picplace = $(this).find('[name=place]');
                 var picplace = $picplace.val();
                 var $img = $('<img>');
-                $img.width(200)
-                $img.attr('src', placeImages2[picplace])
-                $img.appendTo('body')
+                $img.width(200);
+                $img.attr('src', placeImages2[picplace]);
+                $img.appendTo('body');
                 
             });
             
