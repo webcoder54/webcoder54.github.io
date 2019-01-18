@@ -234,10 +234,8 @@ https://www.khanacademy.org
         }
         #commentF {
             position:absolute;
+        botto: 350px;
             left: 1000px;
-        
-        }
-        #HPIC {
         
         }
         </style>
@@ -308,17 +306,15 @@ https://www.khanacademy.org
         
         <h2 id = 'six-post' class = 'post'> The National Championship</h2>
         <h6 class = 'posted'> Posted on January 7, 2019</h6>
-        <img id = 'nat-champ' src = 'http://static-30.sinclairstoryline.com/resources/media/fd32f01a-14de-4d2c-a9a6-10a4336195f9-CollegeFootball1.jpg?1446654512586' width = '300' alt = 'national championship trophy'>
         <p id = 'info-six'>I am watching the College Football National Championship(just kidding I am mostly coding this website), and it is a high scoring game. It is Clemson vs. Alabama, and Clemson has the lead with 37-16. I will update later to tell who won. <span id = 'ClemW'>Update: Clemson won 41-16 sadly.</span> Most Alabama fans in my grade are sad, but I knew that Alabama was going to lose at one point. I mean you can't win every game can you? Well, bye.</p>
-
+<img id = 'nat-champ' src = 'http://static-30.sinclairstoryline.com/resources/media/fd32f01a-14de-4d2c-a9a6-10a4336195f9-CollegeFootball1.jpg?1446654512586' width = '300' alt = 'national championship trophy'>
      
         <!-- Harry Potter Binge -->
 
         <h2 id = 'seven-post' class = 'post'>Harry Potter Binge!!</h2>
         <h6 class = 'posted'>Posted on March 2,2019</h6>
-        <img width = '350px'id ='HPIC' src = 'https://www.irishtimes.com/polopoly_fs/1.3170107.1501253408!/image/image.jpg_gen/derivatives/box_620_330/image.jpg' alt = 'Harry Potter'>
         <p id = 'info-seven'>I love <span id = 'dot'>Harry Potter</span> and it is my favorite book. Last week I binged the books for my sixth time, and today I will binge the movies.<span id = 'spoiler'> Do not read if you have not read the books.</span> I am on the seventh movie part two, and...oh come Neville you can kill Nagini come on. Sorry for the interuption I was about to say that Harry potter is my favorite series, and leave in the comments what your favorite book is. Personally my favorite book is the sixth, The Half-Blood Prince, beacuse it reveals a lot about Voldemort and who he was. I'll see you on my next post.   </p>
-
+        <img src = 'https://www.irishtimes.com/polopoly_fs/1.3170107.1501253408!/image/image.jpg_gen/derivatives/box_620_330/image.jpg' alt = 'Harry Potter'>
         <!-- Scholar's Bowl -->
        
         <h2 id = 'eight-post' class = 'post'> Scholar's Bowl Trip </h2>
@@ -516,3 +512,12 @@ https://www.khanacademy.org
              commentButton.addEventListener('click', commentIt);
              var from  = document.getElementById ('from').value;
             var comment = document.getElementById ('comment2').value;
+            
+            storyDiv.textContent = from + '     ' + comment + '.' ;
+        };
+        commentButton.addEventListener('click', commentIt);
+            
+            
+        </script>
+    </body>
+</html>
