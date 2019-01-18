@@ -485,10 +485,7 @@ https://www.khanacademy.org
                 <td> LazarBeam
                     <td> i hate lachlan
                 </tr>
-                <tr> 
-                    <td> <span id = 'from2'> </span>
-                    <td> <span id = 'what'> </span>    
-                </tr>
+                
                 
             </tbody>
             
@@ -502,7 +499,7 @@ https://www.khanacademy.org
 
 
 <button id = 'comment-button' class = 'comment-function'> Comment it </button>
-<p class = 'comment-function' id ='commentF'> Your Comment:<span id = 'story' </p>
+        <p class = 'comment-function' id ='commentF'> Your Comment:<span id = 'story'> </span> </p>
 
 
 <!-- Extra Comment Stuff -->
@@ -515,21 +512,16 @@ https://www.khanacademy.org
         <script>
             
         var commentButton = document.getElementById('comment-button');
-        var commentItFrom = function() {
-            var storyDiv = document.getElementById("from2");
-            var $from  = document.getElementById ('from').value;
-            storyDiv.innerHTML = $from;
-             
-             
-        }
+        var commentIt = function() {
+            var storyDiv = document.getElementById("story");
+            storyDiv.innerHTML = "??Your story here";
+             libButton.addEventListener('click', commentIt);
+             var comment  = document.getElementById ('comment2').value;
+            var from = document.getElementById ('from').value;
             
-            var commentButton2 = document.getElementById('comment-button');
-        var commentItWhat = function() {
-            var storyDiv2 = document.getElementById("what");
-            var $what = document.getElementById ('comment2').value;
-            storyDiv2.innerHTML = $what;
-             
-             
-        }
-        commentButton2.addEventListener('click', commentItWhat);
-        commentButton.addEventListener('click', commentItFrom);
+            storyDiv.textContent = from + '          ' + comment ;
+        };
+        commentButton.addEventListener('click', commentIt);
+            
+          
+        
