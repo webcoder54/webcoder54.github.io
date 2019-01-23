@@ -261,11 +261,11 @@ https://www.khanacademy.org
             <li class = 'content'> <a href = '#ten-post'> Trouble with a website </a> </li>
             <li class = 'content'> <a href = '#eleven-post'> Tannerite </a> </li>
             <li class = 'content'> <a href = '#twelve-post'> Amazing Places </a> </li>
-            <li class = 'content'> <a href = '#pic-sel'> Pick a Place </a> </li>
             <li class = 'content'> <a href = '#thir-post'> Me Bored </a> </li>
+            <li class = 'content'> <a href = '#pic-sel'> Pick a Place </a> </li>
             <li class = 'content'> <a href = '#comment'> Comments! </a> </li>
             
-            
+            ad
         </ul>
         
         <!-- First Post -->
@@ -359,6 +359,11 @@ https://www.khanacademy.org
     <li> North Georgia Mountains </li>
     <li> Atlanta </li>
 </ol>
+
+        <!-- Me bored -->
+        <h2 id = 'thir-post' class = 'post'> Me Bored </h2>
+        <h6 class = 'posted'> Posted on January 17, 2019 </h6>
+        <p id = 'info-thir'> Do you get bored? Me too. I mostly am writing this to help my form, if you haven't done it do it now, but part is because I am bored. Well I could go farther into jQuery, but I want to work on my blog right now so. Tommorrow I leave for a ski trip and I am excited to go! That is pretty musch it. Sorry for the short entry, but I need to work on the form. Bye. </p>
 <form id = 'pic-sel'> 
     <label>
         Places
@@ -374,12 +379,7 @@ https://www.khanacademy.org
         
     
     </form>
-        <div id = 'picPLACE'> Picture: </div>
-        <!-- Me bored -->
-        <h2 id = 'thir-post' class = 'post'> Me Bored </h2>
-        <h6 class = 'posted'> Posted on January 17, 2019 </h6>
-        <p id = 'info-thir'> Do you get bored? Me too. I mostly am writing this to help my form, if you haven't done it do it now, but part is because I am bored. Well I could go farther into jQuery, but I want to work on my blog right now so. Tommorrow I leave for a ski trip and I am excited to go! That is pretty musch it. Sorry for the short entry, but I need to work on the form. Bye. </p>
-
+        <
 
         <!-- comments -->
         <h2 id = 'comment'> Comments </h2>
@@ -558,7 +558,7 @@ https://www.khanacademy.org
                 var img = $('<img>');
                 img.width(200)
                 img.attr('src', placeImages[picplace])
-                img.appendTo('picPLACE')
+                img.appendTo('body')
                 
             });
             
