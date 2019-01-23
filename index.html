@@ -187,6 +187,9 @@ https://www.khanacademy.org
         #twelve-post {
         font-family: Corbel;
         }
+        #fourt-post {
+        font-family: ariel;
+        }
         #help {
             cursor:help;
         }
@@ -262,6 +265,7 @@ https://www.khanacademy.org
             <li class = 'content'> <a href = '#eleven-post'> Tannerite </a> </li>
             <li class = 'content'> <a href = '#twelve-post'> Amazing Places </a> </li>
             <li class = 'content'> <a href = '#thir-post'> Me Bored </a> </li>
+            <li class = 'content'> <a href = '#fourt-post'> Ski Trip in Gatlinburg </a> </li>
             <li class = 'content'> <a href = '#pic-sel'> Pick a Place </a> </li>
             <li class = 'content'> <a href = '#comment'> Comments! </a> </li>
             
@@ -363,8 +367,14 @@ https://www.khanacademy.org
         <!-- Me bored -->
         <h2 id = 'thir-post' class = 'post'> Me Bored </h2>
         <h6 class = 'posted'> Posted on January 17, 2019 </h6>
-        <p id = 'info-thir'> Do you get bored? Me too. I mostly am writing this to help my form, if you haven't done it do it now, but part is because I am bored. Well I could go farther into jQuery, but I want to work on my blog right now so. Tommorrow I leave for a ski trip and I am excited to go! That is pretty musch it. Sorry for the short entry, but I need to work on the form. Bye. </p>
+        <p id = 'info-thir'> Do you get bored? Me too. I mostly am writing this to help my form, if you haven't done it do it now, but part is because I am bored. Well I could go farther into jQuery, but I want to work on my blog right now so. Tommorrow I leave for a ski trip and I am excited to go! That is pretty much it. Sorry for the short entry, but I need to work on the form. Bye. </p>
+        <!-- SKi TRip -->
+        
+        <h2 id = 'fourt-post' class = 'post'> Ski Trip in Gatlinburg </h2>
+        <h6 class = 'posted'> Posted on January 22, 2019 </h6>
+        
 <form id = 'pic-sel'> 
+    
     <label>
         Places
         <select name = 'place'>
@@ -547,8 +557,8 @@ https://www.khanacademy.org
             
             var placeImages = {
                 'LMR': 'https://media-cdn.tripadvisor.com/media/photo-s/09/89/9f/9d/lone-mountain-guest-ranch.jpg',
-                'DisneyWorld': 'https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1440/540/75/dam/wdpro-assets/tickets/WDW_List.jpg?1547579057083',
-                'Baltimore' : 'https://simg1.imagesbn.com/pimages/store/photo/s2/2881.jpg'
+                'DisneyWorld': 'https://parade.com/wp-content/uploads/2017/06/Disney-World-Cinderella-Castle-FTR.jpg',
+                'Baltimore' : 'http://www.trbimg.com/img-58d349a8/turbine/bs-bz-baltimore-population-loss-jumps-20170322'
                 
             };
             $('#pic-sel').on('submit', function(event){
