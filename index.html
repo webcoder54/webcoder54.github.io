@@ -369,7 +369,7 @@ https://www.khanacademy.org
         Places
         <select name = 'place'>
             <option value = 'disney'> Disney World </option>
-            <option value = 'LMR'> LMR </option>
+            <option value = 'LMR'> LMR in Montana </option>
             <option value = 'baltimore' > Baltimore </option>
             
             
@@ -379,7 +379,7 @@ https://www.khanacademy.org
         
     
     </form>
-        <
+        <div id = 'picPLAce'>Picture: </div>
 
         <!-- comments -->
         <h2 id = 'comment'> Comments </h2>
@@ -558,7 +558,7 @@ https://www.khanacademy.org
                 var img = $('<img>');
                 img.width(200)
                 img.attr('src', placeImages[picplace])
-                img.appendTo('body')
+                img.appendTo('#picPLAce')
                 
             });
             
