@@ -257,8 +257,8 @@ https://www.khanacademy.org
             background-color: grey;
         }
         #ff-result {
-        border: 2px dotted grey;
-            background-color: gold;
+        border: 2px dotted gold;
+        background-color: grey;
             
         }
         #ff-but {
@@ -452,7 +452,7 @@ https://www.khanacademy.org
             </label>
             <button type = 'submit' id = 'ff-but'> Do you like it? </button>
         </form>
-        <div id = 'ff-result> Do you like it? </div>
+        <div id = 'ff-result>  </div>
                    
                    
         <!-- comments -->
@@ -666,14 +666,14 @@ https://www.khanacademy.org
             $('#do-like').on('submit', function(event) {
             event.preventDefault();
             var $f-answer = $('#like?');
-            var answer2 = $f-answer.val();
-                if (answer2 === 'yes') {
+            var fanswer = $f-answer.val();
+                if (fanswer === 'yes') {
                 $('#ff-result').text('I like Fortnite too!');
                 }
-                if (answer2 === 'no') {
+                if (fanswer === 'no') {
                 $('#ff-result').text("I'm sure that you have a good reason.");
                 } 
-                if (answer2 === 'dn') { 
+                if (fanswer === 'dn') { 
                 $('#ff-result').text('Maybe you can play and figure out if you like it.');
                 }
             });
