@@ -246,6 +246,10 @@ https://www.khanacademy.org
         .awesome {
         text-align:center;
         }
+        #result {
+        border: 2px dotted silver;
+            background-color: gold;
+        }
         </style>
     <body>
         
@@ -348,7 +352,7 @@ https://www.khanacademy.org
 <h2 id = 'eleven-post' class = 'post'> Tannerite </h2>
 <h6 class = 'posted'> Posted on January 13, 2019 </h6>
 <p id = 'info-eleven'> Do you know what Tannerite is? Probably not unless if you have a hunting camp. Tannerite is like a legal explosive that only explodes on high impact like being shot by a 2 70 gun. So christmas of 2017 I got tannerite from my uncle, so we went to our hunting camp to shoot it. When we got to our hunting camp we went to the rifle range and got everything set up. When we got there we also figured out that our uncle had brought soda. We taped the tannerite to a tree and blew up a tree about two times. Then we taped the soda to a tree(after having a sip) and blow up a tree with soda on it about two times. Anyway it was fun, and if you want a good video just search up tannerite videos on youtube. Though I have a video below. </p>
-<video src = 'BLogVid.mp4'  width = '320' height = '240' controls preload> </video> 
+<video src = 'BLogVid.mp4' poster = 'TanneriteForBlog.jpeg'  width = '320' height = '240' controls preload> </video> 
 
          
         <!-- awesome places -->
@@ -371,6 +375,7 @@ https://www.khanacademy.org
         <h2 id = 'fourt-post' class = 'post'> Ski Trip in Gatlinburg </h2>
         <h6 class = 'posted'> Posted on January 22, 2019 </h6>
         <p id = 'info-fourt'> It was amazing! On the bus I sat Parker, Dylan, and Elliott. We had a lot of fun playing games until it happened. We pulled into a gas station, stopped, and noticed that the High School boy's bus was smoking. Five minutes later, we pulled into the exact same gas station. We stayed there for about one hour and thirty minutes. </p>
+        <!-- Select Place -->
 <form id = 'pic-sel'> 
     
     <label>
@@ -388,7 +393,19 @@ https://www.khanacademy.org
     
     </form>
         <div id = 'picPLAce'>Picture: </div>
-
+        <!-- Favorite Animal -->
+        <form id = 'fav-ani'> 
+        <label>
+        Favorite animal
+            <select id = 'ani'>
+                <option value = 'dog'> Dog </option>
+                <option value = 'cat'> Cat </option>
+                <option value = 'other'> Other </option>
+                </select>
+            </label>
+            <button type = 'submit'> Choose </button>
+        </form>
+        <div id = 'result'> </div>
         <!-- comments -->
         <h2 id = 'comment'> Comments </h2>
         <table id ='comment-table'>
@@ -582,7 +599,21 @@ https://www.khanacademy.org
                 img.appendTo('#picPLAce')
                 
             });
+            $('fav-ani').on('submit', function(event) {
+            event.preventDefault();
+            var $answer = $('#ani');
+                var answer = $answer.val();
+                if (answer === 'dog') {
+                $('#result').text('I like dogs too!!');
+                }
+                if (answer === 'cat') {
+                $('#result').text('I respect your opinion about cats')
+                    
+                }else {
+                $('#result').text('Email me at DGill@stpaulsmobile.net and tell me your animal, or put it in the comments.);
+                }
             
+            });
             
         </script>
     </body>
