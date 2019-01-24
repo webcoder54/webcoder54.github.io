@@ -261,6 +261,15 @@ https://www.khanacademy.org
             background-color: gold;
             
         }
+        #ff-but {
+        background-color: blue;
+        }
+        #ani-but {
+        background-color: gold;
+        }
+        #pla-but {
+        background-color: green;
+        }
         </style>
     <body>
         
@@ -408,12 +417,14 @@ https://www.khanacademy.org
             
         </select>
         </label>
-        <button type = 'submit'>Go!</button>
+        <button type = 'submit' id = 'pla-but'>Go!</button>
         
     
     </form>
         <div id = 'picPLAce'>Picture: </div>
+        
         <!-- Favorite Animal -->
+        
         <form id = 'fav-ani'> 
         <label>
         Favorite animal
@@ -423,7 +434,7 @@ https://www.khanacademy.org
                 <option value = 'other'> Other </option>
                 </select>
             </label>
-            <button type = 'submit'> Choose </button>
+            <button type = 'submit' id = 'ani-but'> Choose </button>
         </form>
         <div id = 'result'> </div>
         <!-- Fortnite Form-->
@@ -439,9 +450,11 @@ https://www.khanacademy.org
 
                 </select>
             </label>
-            <button type = 'submit'> Do you like it? </button>
+            <button type = 'submit' id = 'ff-but'> Do you like it? </button>
         </form>
-        <div id = 'ff-result> </div>
+        <div id = 'ff-result> Do you like it? </div>
+                   
+                   
         <!-- comments -->
         <h2 id = 'comment'> Comments </h2>
         <table id ='comment-table'>
@@ -653,7 +666,7 @@ https://www.khanacademy.org
             $('#do-like').on('submit', function(event) {
             event.preventDefault();
             var $answer2 = $('#like?');
-            var answer2 = $answer.val();
+            var answer2 = $answer2.val();
                 if (answer2 === 'yes') {
                 $('#ff-result').text('I like Fortnite too!');
                 }
