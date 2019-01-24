@@ -256,6 +256,11 @@ https://www.khanacademy.org
         border: 2px dotted gold;
             background-color: grey;
         }
+        #ff-result {
+        border: 2px dotted grey;
+            background-color: gold;
+            
+        }
         </style>
     <body>
         
@@ -281,6 +286,7 @@ https://www.khanacademy.org
             <li class= 'content' > <a href = '#fif-post'> Fortnite </a> </li>
             <li class = 'content'> <a href = '#pic-sel'> Pick a Place </a> </li>
             <li class = 'content'> <a href = '#fav-ani'> Pick an animal </a> </li>
+            <li class = 'content'> <a href = '#do-like'> Fortnite Form </a> </li>
             <li class = 'content'> <a href = '#comment'> Comments! </a> </li>
             
             
@@ -420,6 +426,22 @@ https://www.khanacademy.org
             <button type = 'submit'> Choose </button>
         </form>
         <div id = 'result'> </div>
+        <!-- Fortnite Form-->
+        
+        
+        <form id = 'do-like'> 
+        <label>
+        Do you like Fortnite?
+            <select id = 'like?'>
+                <option value = 'yes'> Yes </option>
+                <option value = 'no'> No </option>
+                <option value = 'dn'> Don't Know </option>
+
+                </select>
+            </label>
+            <button type = 'submit'> Do you like it? </button>
+        </form>
+        <div id = 'ff-result> </div>
         <!-- comments -->
         <h2 id = 'comment'> Comments </h2>
         <table id ='comment-table'>
@@ -618,13 +640,28 @@ https://www.khanacademy.org
             var $answer = $('#ani');
             var answer = $answer.val();
                 if (answer === 'dog') {
-                $('#result').text('I like dogs too');
+                $('#result').text('I like dogs too!');
                 }
                 if (answer === 'cat') {
-                $('#result').text('I respect your opinion');
+                $('#result').text('I respect your opinion.');
                 } 
                 if (answer === 'other') { 
                 $('#result').text('Tell me in the comments or go to the help page to tell me.');
+                }
+            });
+            
+            $('#do-like').on('submit', function(event) {
+            event.preventDefault();
+            var $answer2 = $('#like?');
+            var answer2 = $answer.val();
+                if (answer2 === 'yes') {
+                $('#ff-result').text('I like Fortnite too!');
+                }
+                if (answer2 === 'no') {
+                $('#ff-result').text("I'm sure that you have a good reason.");
+                } 
+                if (answer2 === 'dn') { 
+                $('#ff-result').text('Maybe you can play and figure out if you like it.');
                 }
             });
            
