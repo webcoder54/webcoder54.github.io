@@ -423,7 +423,7 @@ https://www.khanacademy.org
     </form>
         <div id = 'picPLAce'>Picture: </div>
         
-        <!-- Favorite Animal -->
+          <!-- Favorite Animal -->
         
         <form id = 'fav-ani'> 
         <label>
@@ -649,6 +649,8 @@ https://www.khanacademy.org
                 img.appendTo('#picPLAce')
                 
             });
+            
+
             $('#fav-ani').on('submit', function(event) {
             event.preventDefault();
             var $answer = $('#ani');
@@ -664,7 +666,20 @@ https://www.khanacademy.org
                 }
             });
             
-            
+            $('#do-like').on('submit', function(event) {
+            event.preventDefault();
+            var $$answer = $('#like');
+            var $$$answer = $$answer.val();
+                if ($$$answer === 'yes') {
+                $('#ff-result').text('I like Fortnite too!');
+                }
+                if ($$$answer === 'no') {
+                $('#ff-result').text("I am sure that you have a good reason.");
+                } 
+                if ($$$answer === 'dn') { 
+                $('#ff-result').text('Maybe you can play and figure out if you like it.');
+                }
+            });
            
             
         </script>
