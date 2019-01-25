@@ -208,7 +208,7 @@ https://www.khanacademy.org
         }
         #newY {
             text-decoration:underline;
-            background-color:rgb(64, 89, 230));
+            background-color:rgb(64, 89, 230);
         }
         
         #Christmas {
@@ -440,7 +440,7 @@ https://www.khanacademy.org
         <!-- Fortnite Form-->
         
         
-        <form id = 'do-like'> 
+        <form id = 'do-like' >
         <label>
         Do you like Fortnite?
             <select id = 'like'>
@@ -664,20 +664,7 @@ https://www.khanacademy.org
                 }
             });
             
-            $('#do-like').on('submit', function(event) {
-            event.preventDefault();
-            var $f-answer = $('#like');
-            var fanswer = $f-answer.val();
-                if (fanswer === 'yes') {
-                $('#ff-result').text('I like Fortnite too!');
-                }
-                if (fanswer === 'no') {
-                $('#ff-result').text("I am sure that you have a good reason.");
-                } 
-                if (fanswer === 'dn') { 
-                $('#ff-result').text('Maybe you can play and figure out if you like it.');
-                }
-            });
+            
            
             
         </script>
