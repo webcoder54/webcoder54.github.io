@@ -443,7 +443,7 @@ https://www.khanacademy.org
         <form id = 'do-like'> 
         <label>
         Do you like Fortnite?
-            <select id = 'like?'>
+            <select id = 'like'>
                 <option value = 'yes'> Yes </option>
                 <option value = 'no'> No </option>
                 <option value = 'dn'> Don't Know </option>
@@ -666,13 +666,13 @@ https://www.khanacademy.org
             
             $('#do-like').on('submit', function(event) {
             event.preventDefault();
-            var $f-answer = $('#like?');
+            var $f-answer = $('#like');
             var fanswer = $f-answer.val();
                 if (fanswer === 'yes') {
                 $('#ff-result').text('I like Fortnite too!');
                 }
                 if (fanswer === 'no') {
-                $('#ff-result').text("I'm sure that you have a good reason.");
+                $('#ff-result').text("I am sure that you have a good reason.");
                 } 
                 if (fanswer === 'dn') { 
                 $('#ff-result').text('Maybe you can play and figure out if you like it.');
