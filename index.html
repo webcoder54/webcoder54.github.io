@@ -703,8 +703,17 @@ https://www.khanacademy.org
                 }
             });
             $('#nat-champ').hide();
-           $('#nat-champ').fadeIn(3000);
-            
+            $('#info-six').on('click', function(event) {
+                $('#nat-champ').fadeIn(3000, function(event){
+                    $h1 = $('<h2>')
+                    $h1.text('National Championship Trophy')
+                    $h1.addClass('natchamword')
+                    $h1.appendTo('#natchamplace')
+                    
+                })
+                
+                
+            })
         </script>
     </body>
 </html>
