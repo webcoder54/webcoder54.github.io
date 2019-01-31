@@ -12,6 +12,7 @@ https://www.w3schools.com/colors/colors_picker.asp
 https://websitesetup.org/web-safe-fonts-html-css/
 https://www.w3schools.com/tags/tag_video.asp
 https://www.w3schools.com/html/html5_video.asp
+https://css-tricks.com/snippets/css/typewriter-effect/ Thank you so much for the typewriter effect
 Khan Academy 
 Codecademy - https://www.codecademy.com/learn 
 https://www.khanacademy.org
@@ -63,7 +64,7 @@ https://www.khanacademy.org
         }
         #db {
             text-align:center;
-            border:10px ridge rgb(85, 152, 224);
+            
             margin:69px;
             padding:7px;
             background-color:rgb(0, 255, 149);
@@ -284,11 +285,37 @@ https://www.khanacademy.org
         #why-pic {
             border: 0px ridge blue;
         }
+        .typewriter {
+        overflow:hidden;
+        border-right:.15em solid red;
+        white-space:nowrap;
+        margin:0 auto;
+        letter-spacing:.15em;
+        animation:
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+        
+        
+        }
+        
+        @keyframes typing {
+            from {width: 0;}
+            to { width: 100%;}
+            
+        
+        }
+        @keyframes blink-caret {
+            from, to {border-color: transparent;}
+            50% {border-color:orange;}
+        }
+        
+        
+        
         </style>
          </head>
     <body>
         
-        <h1 id  = 'db'>Livin' The Life</h1>
+        <h1 id  = 'db' class = 'typewriter'>Livin' The Life</h1>
 
         <h3>Contents</h3>
         <ul>
@@ -423,7 +450,6 @@ https://www.khanacademy.org
         <h6 class = 'posted'> Posted on January 24, 2019 </h6>
         <p id = 'info-fif'> Do you like Fortnite? I personal like it, but I know that you might not. To me it is a good game, though don't worry because my mom makes sure that I don't play to much. I have about 32 wins and like 500+ kills. I know that you don't care about this, I am mostly just doing this for a video opportunity, and a form oppertunity. Please watch the video, and take the form. You can also leave in the comments if you like it. You can also tell me how many wins you have (if you play). </p>
         <video src = 'ForBBlog.mp4' poster = 'forposter.jpg' width = '320' height = '280' controls preload> </video>
-        <!-- Hunting camp -->
         
         <!-- Select Place -->
 <form id = 'pic-sel'> 
