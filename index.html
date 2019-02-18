@@ -678,6 +678,10 @@ https://www.khanacademy.org
                 <td> SaNicBoI
                 <td> GoTtA gO fAsT!!!!!111
                 </tr>
+                <tr> 
+                    <td id = 'td-from'> </td>
+                    <td id = 'td-what'> </td>
+                </tr>
             </tbody>
             
         </table>
@@ -713,6 +717,16 @@ https://www.khanacademy.org
             storyDiv.textContent = from + '     ' + comment + '.' ;
         };
         commentButton.addEventListener('click', commentIt);
+            
+             $('#comment-button').on('click', function(event){
+                var from = $('#from')
+                var what = $('#comment2')
+                var fromv = from.val();
+                var whatv = what.val();
+                $('#td-from').text(fromv)
+                $('#td-what').text(whatv)
+                
+            })
             
             var placeImages = {
                 'LMR': 'https://media-cdn.tripadvisor.com/media/photo-s/09/89/9f/9d/lone-mountain-guest-ranch.jpg',
