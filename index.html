@@ -337,7 +337,7 @@ https://www.khanacademy.org
             <li class = 'content'> <a href = '#fourt-post'> Ski Trip in Gatlinburg </a> </li>
             <li class= 'content' > <a href = '#fif-post'> Fortnite </a> </li>
             <li class = 'content'> <a href = '#sixt-post'> The REAL Super Bowl </a> </li>
-            <li class = 'content'> <a href = '#seventh-post'> Scholar's Bowl State Trip </a> </li>
+            <li class = 'content'> <a href = '#teenseventh-post'> Scholar's Bowl State Trip </a> </li>
             <li class = 'content'> <a href = '#pic-sel'> Pick a Place </a> </li>
             <li class = 'content'> <a href = '#fav-ani'> Pick an animal </a> </li>
             <li class = 'content'> <a href = '#do-like'> Fortnite Form! </a> </li>
@@ -463,9 +463,9 @@ https://www.khanacademy.org
         <h6 class = 'posted'> Posted on Febuary 3, 2019 </h6>
         <p id = 'info-sixt'> It is the day of the Super Bowl! In the morning I played Fortnite, went to Church, watched my brothers play Fortnite and Terraria, played Soccer, practiced Typing Pal, and read. Then we started the game and all I did was read most of the time, and watched commercials. Then I finished my book, we had dinner, ribs, beans, and broccoli, and we resumed watching the show. Then I did some SQL and Ruby, made some edits to the blog, and searched up how to make it better. Oh wait, I just realized that this is supposed to be about the Super Bowl, anyway the score now is 10-3 Patriots with 2:25 left in the game. I will give the final score later:<span id = 'sb-report'> 13-3 Patriots won. </span> </p>
         <!-- Scholar's Bowl State -->
-        <h2 id = 'seventh-post> Scholar's State Trip </h2>
+        <h2 id = 'teenseventh-post> Scholar's State Trip </h2>
         <h6 class = 'posted'> Posted on March 25, 2019 >/h6>
-            <p id = 'info-fif'>So I made the State team and it was AWESOME. I finally had a phone for the trip so that made it even better. We drove up and stayed in a hotel. I was shared a room with Cam and Ben and we just watched YouTube in the room. After we got there, we went downstairs and practiced. After we practiced, we played games and I played QuizUp against Caroline. The Great QuizUp 
+            <p id = 'info-se'>So I made the State team and it was AWESOME. I finally had a phone for the trip so that made it even better. We drove up and stayed in a hotel. I was shared a room with Cam and Ben and we just watched YouTube in the room. After we got there, we went downstairs and practiced. After we practiced, we played games and I played QuizUp against Caroline. The Great QuizUp 
             War is a war where Caroline (and AK and Maya and our teacher) and I had a war with QuizUp, a trivia game app. Then we got to the competition, won 3 out of 5 games, and I won the third best scorer in our division. Then we went on the bus, got Chick-Fil-A, and went home.</p>
             <img id = 'quizUp' src = 'https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/cf/75/a5/cf75a503-ed11-7a27-c40a-22cac5f14063/AppIcon-1x_U007emarketing-85-220-0-5.png/246x0w.jpg' width '240' alt = 'QuizUp Logo'>
         <!-- Select Place -->
@@ -821,6 +821,15 @@ https://www.khanacademy.org
             $('#m-but').on('click', function(event) {
                 $('#m-img').show();
                 
+            })
+            //QuizUp picture
+            $('#quizUp').hide()
+            $('#info-se').on('click', function(event) {
+                $('#quizUp').animate ({
+                width: '270px'
+                })
+            
+            
             })
         </script>
     </body>
