@@ -517,6 +517,20 @@ https://www.khanacademy.org
             <button type = 'submit' id = 'ff-but'> Do you like it? </button>
         </form>
         <div id = 'ff-result'>  </div>
+        
+        <form id = 'harrypotter'>
+            <label>
+                Do you like Harry Potter?
+                <select id = 'yn'>
+                    <option value = 'y'> Yes </option>
+                    <option value = 'n'> No </option>
+                    <option value = 'nr'> Never read it </option>
+                    <option value = 'sri'> Stopped reading it </option>
+                </select>
+            </label>
+            <button type = 'submit' id = 'hpbut'> Do you like it? </button>
+        </form>
+        <div id = 'hp-result'> </div>
                    
         <!-- WHY? -->
         <h2 id = 'why'> Why? </h2>
@@ -710,9 +724,10 @@ https://www.khanacademy.org
         <h2 id = 'help'> <a href = 'https://www.khanacademy.org/computer-programming/blog-help-menu/5646119011254272'>Help</a></h2>
 
         <!-- JAVA -->
+        <!-- source for jQuery-->
         <script src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
         <script>
-            
+            //add comment to page 
         var commentButton = document.getElementById('comment-button');
         var commentIt = function() {
             var storyDiv = document.getElementById("story");
@@ -724,7 +739,7 @@ https://www.khanacademy.org
             storyDiv.textContent = from + '     ' + comment + '.' ;
         };
         commentButton.addEventListener('click', commentIt);
-            
+            //add comment to table
              $('#comment-button').on('click', function(event){
                 var from = $('#from')
                 var what = $('#comment2')
@@ -734,13 +749,14 @@ https://www.khanacademy.org
                 $('#td-what').text(whatv)
                 
             })
-            
+            //dictionary with pics
             var placeImages = {
                 'LMR': 'https://media-cdn.tripadvisor.com/media/photo-s/09/89/9f/9d/lone-mountain-guest-ranch.jpg',
                 'disney': 'https://parade.com/wp-content/uploads/2017/06/Disney-World-Cinderella-Castle-FTR.jpg',
                 'baltimore' : 'http://images.realclear.com/343429_5_.jpeg'
                 
             };
+            //go anywhere
             $('#pic-sel').on('submit', function(event){
                 event.preventDefault();
                 var $picplace = $(this).find('[name=place]')
@@ -752,7 +768,7 @@ https://www.khanacademy.org
                 
             });
             
-
+            //favorite animal
             $('#fav-ani').on('submit', function(event) {
             event.preventDefault();
             var $answer = $('#ani');
@@ -767,13 +783,13 @@ https://www.khanacademy.org
                 $('#result').text('Tell me in the comments or go to the help page to tell me.');
                 }
             });
-            
+            //fortnite form
             $('#do-like').on('submit', function(event) {
             event.preventDefault();
             var $$answer = $('#like');
             var $$$answer = $$answer.val();
                 if ($$$answer === 'yes') {
-                $('#ff-result').text('I like Fortnite too!');
+                $('#ff-result').text('I kind of like Fortnite.');
                 }
                 if ($$$answer === 'no') {
                 $('#ff-result').text("I am sure that you have a good reason.");
@@ -782,6 +798,13 @@ https://www.khanacademy.org
                 $('#ff-result').text('Maybe you can play and figure out if you like it.');
                 }
             });
+            
+            $('#harrypotter').on('submit', function(event) {
+            event.preventDefault();
+                var $aanswer = $('#yn')
+                var $$aanswer = $aanswer.val();
+            })
+            
             $('#nat-champ').hide();
             $('#info-six').on('click', function(event) {
                 $('#nat-champ').fadeIn(3000, function(event){
