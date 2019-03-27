@@ -310,6 +310,10 @@ https://www.khanacademy.org
         background-color:red;
         color:white;
         }
+        #hp-result {
+        border: 2px dotted gold;
+        background-color: grey;
+        }
         
         
         </style>
@@ -798,11 +802,24 @@ https://www.khanacademy.org
                 $('#ff-result').text('Maybe you can play and figure out if you like it.');
                 }
             });
-            
+            //harry potter form 
             $('#harrypotter').on('submit', function(event) {
             event.preventDefault();
                 var $aanswer = $('#yn')
                 var $$aanswer = $aanswer.val();
+                if ($$aanswer === 'y') {
+                $('#hp-result').text("I love Harry Potter too!")
+                    
+                }
+                if ($$aanswer === 'n'){
+                $('#hp-result').text('You must have a good reason.')
+                
+                }
+                if($$aanswer === 'nr') {
+                $('#hp-results').text('You need to read it.')
+                }else {
+                $('#hp-results').text('You need to pick it up especially if you stopped during the Order of the Pheonix. The Half-Blood Prince, the next book, is AWESOME.')
+                }
             })
             
             $('#nat-champ').hide();
