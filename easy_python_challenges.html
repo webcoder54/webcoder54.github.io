@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Python Challenges (easy)</title>
+	<link rel = 'icon' href = 'https://www.python.org/static/opengraph-icon-200x200.png' type = 'image/png'>
+	<style>
+		body {
+            background-color:#5CDB95;
+            font-family:helvetica ;
+            
+          
+        }
+		
+		.head{
+            text-align:center;
+            margin:44px;
+            background-color:white;
+            border:10px ridge #05386B;
+			font-family:Corbel;
+			}
+		ul {
+  			list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: #333;
+			}
+
+			li {
+			  float: left;
+			  font-family:Bookman;
+			}
+
+			li a {
+			  display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+			  background-color: #111;
+			}
+
+			.active {
+			  background-color: #4CAF50;
+			}
+			#title {
+				text-align:center;
+				font-family:georgia;
+			}
+			#congrats {
+				text-align:center;
+			}
+			#congrats-img{
+				border:0px ridge gold;
+			}
+
+	</style>
+</head>
+<body>
+<ul>
+<li class = 'toc'><a href ='C:\Users\dgill\Desktop\Tech%20Fair%202020\Python.html'>Home</a></li>
+<li class = 'toc'> <a href = '#1'>1st Challenge</a></li>
+<li class = 'toc'><a href = '#2'>2nd Challenge</a></li>
+<li class = 'toc'><a href = '#3'>3rd Challenge</a></li>
+<li class = 'toc'><a href = '#4'>4th Challenge</a></li>
+<li class = 'toc'><a href = '#5'>5th Challenge</a></li>
+<li class = 'toc'><a href= '#6'>6th Challenge</a></li>
+<li class = 'toc'><a href = '#final'>Final Challenge</a></li>
+<li class = 'toc'><a href = '#congrats'>Congratulations!</a></li>
+</ul>
+
+<h1 id = 'title'>Easy Python Challenges</h1>
+
+
+<!-- first challenge -->
+<h1 class = 'head' id = '1'> 1st Challenge</h1>
+
+<p>Make a program to take a user's name, age, and favorite programming language, and print them back.</p>
+
+<button id = 'hint1'> Hint </button>
+<div id = 'hint1place'></div>
+<button id = 's1-but'>Solution</button>
+<p id = 's1'> <code> name = input("What is your name: ") <br> age = input("How old are you: ") <br> fav = input("What is your favorite programming language: ") <br> print("Hello, " + name + ' you are ' + age + ' years old and your favorite programming language is ' + fav + '.')</code> </p>
+
+<!-- Second challenge-->
+
+<h1 class = 'head' id = '2'>2nd Challenge</h1>
+
+<p> Make a program to say that if the user's name is the same as yours.</p>
+
+<button id = 'hint2'> Hint </button>
+<div id = 'hint2place'></div>
+<button id = 's2-but'>Solution</button>
+<p id = 's2'> <code>name = input('What is your name: ') <br> if name == 'Daniel'(or your name): <br> (indentation/press tab) print('That is my name too!') <br> else: <br> (indentation) print('That is not my name.')</code></p>
+
+<!-- third challenge -->
+
+<h1 class = 'head' id = '3'>3rd Challenge</h1>
+
+<p>Make a program that takes two numbers from the user and adds them with a function.</p>
+<button id = 'hint3'> Hint </button>
+<div id = 'hint3place'></div>
+<button id = 's3-but'>Solution</button>
+<p id = 's3'> <code> def add(a,b): <br> (indentation) return a + b <br> num1 = int(input("Give me a number")) <br> num2 = int(input("Give me another number: "))<br> print(add(num1,num2))</code></p>
+<!-- 4th challenge -->
+<h1 class = 'head' id = '4'> 4th Challenge</h1>
+<p> Make a program that makes a list of your friends names, and prints it out.</p>
+<button id = 'hint4'> Hint </button>
+<div id = 'hint4place'></div>
+<button id = 's4-but'>Solution</button>
+<p id = 's4'> <code> friends = ['Daniel', "John", "William", "Philip"] <br> print(friends)</code></p>
+<!-- 5th challenge -->
+<h1 class = 'head' id = '5'>5th Challenge</h1>
+<p>Make a program that loops through a list of names, and prints them all (without doing print (friends)) you HAVE to use a while function. </p>
+<button id = 'hint5'> Hint </button>
+<div id = 'hint5place'></div>
+<button id = 's5-but'>Solution</button>
+<p id = 's5'> <code> friends = ['Daniel', "John", "William", "Philip"] <br> i = 0 <br> while i &lt; 4: <br> (indentation) print (friends[i]) <br> (indentation)i += 1 </code></p>
+<!-- 6th challenge -->
+<h1 class = 'head' id = '6'>6th Challenge</h1>
+<p>Make a program to generate 100 random numbers and print them.(To do random, you have to do: import random then you would do random.randint(start, end(exclusive)))</p>
+<button id = 'hint6'> Hint </button>
+<div id = 'hint6place'></div>
+<button id = 's6-but'>Solution</button>
+<p id = 's6'> <code>import random <br> for i in range(1,101): <br> (indentation)print(random.randint(1,1000))  </code></p>
+
+<!-- final challenge -->
+<h1 class = 'head' id = 'final'>Final Challenge</h1>
+<p>Make a program to ask if the user likes Python, makes a function that takes a string and loops it 100 times, then if the user says yes, call the loop function with something like: I like it too. If the user does not like python, then call loop with something like: That's sad. If the user says someething else call loop on: restart program.</p>
+<button id = 's7-but'>Solution</button>
+<p id = 's7'> <code>python = input("Do you like Python(y or n): ") <br>
+like = 'Wow. I like it to!!' <br>
+no_like = "That's sad." <br>
+other = "Please run the program again." <br>
+def loop(string): <br>
+(tab) for i in range(1,101): <br>
+(tab) (tab) print(string) <br>
+if python == 'y':<br>
+(tab)loop(like)<br>
+if python == 'n':<br>
+(tab)loop(no_like)<br>
+if python != 'n' and python != 'y':<br>
+(tab)loop(other)
+  </code></p>
+  <h1 id = 'congrats'>Congratulations</h1>
+  <img width = '0' id = 'congrats-img' src ='https://image.shutterstock.com/image-vector/congratulations-banner-confetti-fun-style-260nw-766781656.jpg'>
+  <p>Now you can go onto the advanced Python tutorial!</p>
+<!-- jQuery source-->
+<script src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+
+<script>
+$('#congrats-img').hide()
+$('#congrats').on('click', function(event){
+	$('#congrats-img').animate({
+           width: '300px',
+           borderWidth: '10px'
+                    
+                    
+                })
+	
+	
+})
+//hint function
+$('#hint1').on('click', function(event){
+	var min = 0
+	var max = 3
+	var hints = ["Remember input: name = input('prompt')", "To print you do print('what you want to print')", "To add variables to strings, you do print('Your name is ' + name )"]
+	
+	var hint = hints[Math.floor(Math.random(0,4)* (+max - +min) + +min)]
+	$('#hint1place').text(hint)	
+})
+//hide solution
+$('#s1').hide()
+//make solution fade in 
+$('#s1-but').on('click', function(event){
+	$('#s1').fadeIn(3000)
+	
+})
+
+
+//hint2 function
+$('#hint2').on('click', function(event){
+	var min = 0
+	var max = 3
+	var hints = ["To set up an if statement, you do: if conditions: (new line and indentation) what you want the program to do.","To check if the name is the same, do if name(variable for name) == 'Your name' then do what the program should do. ","Remember else statements"]
+	
+	var hint = hints[Math.floor(Math.random(0,4)* (+max - +min) + +min)]
+	$('#hint2place').text(hint)	
+})
+//hide solution
+$('#s2').hide()
+//make solution fade in 
+$('#s2-but').on('click', function(event){
+	$('#s2').fadeIn(3000)
+	
+})
+//hint 3 function
+
+$('#hint3').on('click', function(event){
+	var min = 0
+	var max = 3
+	var hints = ["To declare a function you do def function name, and for parameters, you would do def function name(parameter1, parameter2).","Make sure to put int before the inputs, like this: num = int(input))","Remember the keyword return."]
+	
+	var hint = hints[Math.floor(Math.random(0,4)* (+max - +min) + +min)]
+	$('#hint3place').text(hint)	
+})
+//hide solution
+$('#s3').hide()
+//make solution fade in 
+$('#s3-but').on('click', function(event){
+	$('#s3').fadeIn(3000)
+	
+})
+
+//hint 4 function
+
+$('#hint4').on('click', function(event){
+	var min = 0
+	var max = 3
+	var hints = ["To make a list, you do: aList = [value, value, value]","To print a list, you do print(list_name)","Do not use loops or functions."]
+	
+	var hint = hints[Math.floor(Math.random(0,4)* (+max - +min) + +min)]
+	$('#hint4place').text(hint)	
+})
+//hide solution
+$('#s4').hide()
+//make solution fade in 
+$('#s4-but').on('click', function(event){
+	$('#s4').fadeIn(3000)
+	
+})
+
+//hint 5 function
+
+$('#hint5').on('click', function(event){
+	var min = 0
+	var max = 3
+	var hints = ["To make a list, you do: aList = [value, value, value]","Remember to do i(variable name) += 1","Remember to define the variable before using it with the while."]
+	
+	var hint = hints[Math.floor(Math.random(0,4)* (+max - +min) + +min)]
+	$('#hint5place').text(hint)	
+})
+//hide solution
+$('#s5').hide()
+//make solution fade in 
+$('#s5-but').on('click', function(event){
+	$('#s5').fadeIn(3000)
+	
+})
+
+//hint 6 function
+
+$('#hint6').on('click', function(event){
+	var min = 0
+	var max = 3
+	var hints = ["To print it do print(random.randint(start, end))","Remember to import random.","A for loop is set up like this: for i in range(1,101)"]
+	
+	var hint = hints[Math.floor(Math.random(0,4)* (+max - +min) + +min)]
+	$('#hint6place').text(hint)	
+})
+//hide solution
+$('#s6').hide()
+//make solution fade in 
+$('#s6-but').on('click', function(event){
+	$('#s6').fadeIn(3000)
+	
+})
+
+//final function
+
+
+//hide solution
+$('#s7').hide()
+//make solution fade in 
+$('#s7-but').on('click', function(event){
+	$('#s7').fadeIn(3000)
+	
+})
+</script>
+</body>
+</html>
