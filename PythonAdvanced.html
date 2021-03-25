@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced Python Tutorial</title>
+	<link rel = 'icon' href = 'https://www.python.org/static/opengraph-icon-200x200.png' type = 'image/png'>
+	<style>
+	body {
+      background-color:rgb(76, 154, 232);
+      font-family:helvetica ;
+            
+         
+        }
+		.head {
+			text-align:center;
+            margin:44px;
+            background-color:white;
+            border:10px ridge rgb(74, 77, 79);
+		}
+		ul {
+  			list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: #333;
+			}
+
+			li {
+			  float: left;
+			}
+
+			li a {
+			  display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+			  background-color: #111;
+			}
+	.center {
+	text-align:center;
+	
+	}
+	
+	</style>
+</head>
+<body>
+<ul>
+<li ><a href ='C:\Users\dgill\Desktop\Tech%20Fair%202020\Python.html'>Home</a></li>
+<li> <a href = '#dictionary'>Dictionaries</a></li>
+<li> <a href = '#class'>Classes</a></li>
+
+</ul>
+<h1 class = 'center'> Advanced Python Tutorial</h1>
+
+<h1 class = 'head' id = 'dictionary'>Dictionaries</h1>
+
+<p> To make a dictionary, you do <br> <code> DictionaryName = {'key': value, 'key': value, 'key': value}</code><br> To print a dictionary you would do <br> <code>print(dictionaryName)</code> <br> To print individual values, you would do <br><code>print(dictionaryName[key])</code></p>
+
+<p>To print an entire dictionary, you would use a for loop. I will give you an example of looping through dictionaries with a for loop: <br><code>countries = {'USA':100,'GB':200,"Canada":200}<br> for i in countries: <br> (tab)print(countries[i])</code></p>
+
+<p>To add a new key and value to the dictionary, you do: <br> <code> dictionaryName[newKey] = value</code>Like: <code> countries['Haiti'] = 20</code></p>
+
+<h1 class = 'head' id = 'class'>Classes</h1>
+
+<p>To make a class you do: <br> <code>class ClassName(Object): <br> (tab)pass</code></p>
+<p> Next you delete pass and replace it with: <br> <code>def __init__(self): <br>(tab)pass</code></p>
+<p>Then, you need to define the parameters of the init function. For example: <br> <code> class Animal(object) <br> (tab)def __init__(self, age, name)</code></p>
+<p>Then you put <code> class Animal(object): <br> (tab)def__init__(self,name,age): <br> (tab)(tab)self.name = name <br>(tab)(tab) self.age = age</code></p>
+</body>
+</html>

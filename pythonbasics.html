@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Python Basics</title>
+	<link rel = 'icon' href = 'https://www.python.org/static/opengraph-icon-200x200.png' type = 'image/png'>
+	<style>
+	body {
+      background-color:rgb(76, 154, 232);
+      font-family:helvetica ;
+            
+         
+        }
+		.head {
+			text-align:center;
+            margin:44px;
+            background-color:white;
+            border:10px ridge rgb(74, 77, 79);
+		}
+		ul {
+  			list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: #333;
+			}
+
+			li {
+			  float: left;
+			}
+
+			li a {
+			  display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+			  background-color: #111;
+			}
+		.center {
+			text-align:center;
+		}
+		.result {
+			background-color:white;
+			border:2px dotted gold;
+		}
+		#help-table {
+			position:absolute;
+            left:300px;
+			background-color:white;
+		}
+		
+	</style>
+</head>
+<body>
+<span>
+<ul>
+<li class = 'toc'><a href = 'C:\Users\dgill\Desktop\Tech%20Fair%202020\Python.html'> Home </a></li>
+<li class = 'toc'> <a href = '#first'> Your First Program </a> </li>
+<li class = 'toc'><a href = '#var'>Variables and Inputs</a></li>
+<li class = 'toc'><a href = '#if'>If Statements</a></li>
+<li class = 'toc'><a href = '#functions_heading'>Functions</a></li>
+<li class = 'toc'> <a href = '#list_heading'>Lists</a></li>
+<li class= 'toc'> <a href = '#loops_heading'>Loops</a></li>
+<li class = 'toc'><a href = '#quiz'>Quiz </a></li>
+<li class = 'toc'><a href = '#congrats'>Congratulations</a></li>
+<li class = 'toc'><a href = '#help'>Help</a></li>
+
+</ul>
+
+<h1 class = 'center'>Python Basics</h1>
+
+
+
+
+<h1 class = 'head' id = 'first'>Your First Program</h1>
+
+<p> Open IDLE, start a new program, or if you have one opened use that one, and then type: print("Hello, World!") Now hit Fn + F5 and you will see that the console prints: Hello, World! Like this: </p>
+
+<img src = 'C:\Users\dgill\Desktop\idle3.png' width = '370px'>
+
+<h1 class = 'head' id = 'var'>Variables!</h1>
+
+
+
+<p> Now to do something a little harder, I will teach you how to store a variable. To make a variable, you type variablename = value. The value can be a string("Hello"), an integer(1), a float(7.7), or a boolean(booleans are either True or False).<br> A variable could be: name = 'Daniel'. <br>Now you can do print(name) with NO quotation marks, and it will print: Daniel.</p> 
+
+
+<p> What if you wanted the variable and other words? Then you would do print("Hello, " + name + '!').</p>
+
+<p>Another variable trick is input. To do input you can do: <br> name = input("What is your name: ") <br> print(name)<br> Then the program will ask you for your name and print it like this: </p>
+
+<video id = 'input_vid' src = 'C:\Users\dgill\Desktop\input_tutorial.mp4' poster = 'https://www.python.org/static/opengraph-icon-200x200.png' width = '320' height = '240' controls preload> </video>
+
+<!-- if statements -->
+<h1 class = 'head' id = 'if'>If Statements</h1>
+<p>If statements are a simple, but important skill to know in Python. If you know any other programming languages, then this will look familiar. Just on tip for python if statements: Identization MATTERS. Here is an example of a program with an if statement: name = input("Give me your name: ") </p>
+<p>
+print("Hello, " + name + '!')
+</p>
+<p>if name == 'Daniel':</p>
+ <p>  print("That is my name too!!") </p>
+ 
+ <p> On this example, you cannot see identations, because HTML does not indent it, but here is a picture example: </p>
+ 
+ <img width = '400px' src = 'C:\Users\dgill\Desktop\idle4.png'>
+ <p> If statements can also be used with number. If you have a variable that is <br> i = 12 <br> and another a = 13 <br> then you could do <br> if a > i: <br> print("i is larger than a ") <br> This leads us to else and elif statements. If you have a variable that is <br> i = 12 <br> and another a = 13 <br> then you could do <br> if a > i: <br> print("a is larger than i ") then you could also do <br> else: print("i is larger than a") <br> If you made i = 14 then the else would run. Here is a video to recap that, because it may have been confusing. </p>
+ <video src = 'C:\Users\dgill\Desktop\if_tutorial.mp4' poster = 'https://blog.off2class.com/wp-content/uploads/2014/11/conditionals.jpeg' width = '320' height = '240' controls preload> </video>
+ 
+<!-- functions -->
+<h1 class = 'head' id = 'functions_heading'> Functions</h1>
+<p>This is the python tutorial for functions! To define a function, you use the keyword <code>def</code> and then the function name(identation matters) like this: <br> <code>def hello(): <br> 		print("Hello")</code><br> Now, to run the function we put the function name and parenthesis. Here is how to run the example function <code>hello()</code> Here is a picture: </p>
+<img width = '400px' src = 'C:\Users\dgill\Desktop\idle5.png'>
+<p>You can also make functions with variables built in like: <br> <code>def add(a,b)<br> return a + b</code><br> print(add(1,2)) <br> Now this might be confusing, but what the program is doing is taking what the user wants (in this case 1 and 2) making them a and b, then adding them. We use the print, because if we don't the program will just store a + b instead of printing it. Here is a picture:  </p>
+<img width = '400px' src = 'C:\Users\dgill\Desktop\idle6.pmg.png'>
+
+<p> There is one more thing that I will teach you about with functions. That is how to get a user input with functions. To do that you will do: <code> <br> def add(a,b): <br> return a + b <br> num = int(input("Give me a number: ")) <br> num2 = int(input("Give me another number: ")) <br> add(num, num2)</code> <br> This makes the variable num a and the varible num2 b. Then it adds a and b together. Now the reason I put int before the input is because when your user will be putting in numbers, you need to add the int. Here is what the program code is and how runs: </p>
+
+<img width = '400px' src = 'C:\Users\dgill\Desktop\idle72.png'>
+
+<img width = '400px' src = 'C:\Users\dgill\Desktop\functionrun.png'>
+<!-- List -->
+
+<h1 id = 'list_heading' class = 'head'>Lists</h1>
+<p>If you know any other programming langauges, then this should be easy. Making a list is like making a variable you do <br> <code> aList = [1,2,3,4,5,6,7,8,9,10]<br>print(aList)</code> <br> This should print [1,2,3,4,5,6,7,8,9,10]. To acces one number in the list you could do <br> <code> print(aList[0])</code><br> Notice that ZERO prints the first index. To make a list go backwards, you would do aList[::-1]. To select certain index from the list use this: The first number in the [] is what index to start at. The second is the one to end at. The third is the stride (if you did aList[::2] then it would print only odd numbers). Just remember, that the numbers are seperated by colons(:). If you want index to start at the beginning and end at the end, just use a colon. For example: print(aList[::]) would do the same as print(aList). <br> LISTS CAN ALSO BE STRINGS</p>
+
+
+<video src = 'C:\Users\dgill\Desktop\listTutorial.mp4' width = '320' height = '240' poster = 'https://www.python.org/static/opengraph-icon-200x200.png' controls preload></video>
+<!-- loops -->
+<h1 id = 'loops_heading' class = 'head'>Loops</h1>
+<p>There are two types of loops in Python: For loops and While loops. I will first teach you, for loops. Here is an example of a for loop that I will explain: </p>
+<img width = '400px' src = 'C:\Users\dgill\Desktop\idle8.png'>
+<p>Here is what it prints: </p>
+<img width = '400px' src = 'C:\Users\dgill\Desktop\forrun.png'>
+
+<p>This is saying, for i in friends <br> print (i)<br> but it means for the elements(the names) in friends, print the elements. I will go more into detail in my video, and my advanced tutorial.</p>
+
+<p>Now, for while loops. Here is an example of a while loop, and what it runs: </p>
+
+<img width = '400px' src = 'C:\Users\dgill\Desktop\idle9.png'>
+
+<p> This one, may be confusing, so I will break it down for you. i = 99 creates a variable with the value of 99. The while, is saying while i(99) is less than 100 then print(i). It also decreases i so it print down from 100. The if is saying when i is less than 0, then break (end) the loop.</p>
+
+<video src = 'C:\Users\dgill\Desktop\listTutorial.mp4' width = '320' height = '240' poster = 'https://www.python.org/static/opengraph-icon-200x200.png' controls preload></video>
+
+
+<!-- Quiz -->
+<h1 class = 'head' id = 'quiz'>Quiz</h1>
+
+<!-- print form -->
+<form id = 'print'>
+
+<label>
+How to print something:
+
+<select id = 'syntax'>
+<option value = 'Print'>Print("Text")</option>
+<option value = 'print'>print("Text")</option>
+<option value  = 'printn'> print "Text" </option>
+
+</select>
+</label>
+<button type = 'submit' id = 'print_button'>Submit</button>
+</form>
+<div class ='result' id = 'print_result'></div>
+
+<!-- variable form  -->
+<form id  = 'variable'>
+<label>
+How do you declare a variable: 
+<select id = 'syntax_var'>
+<option value = 'var'> var i = 12</option>
+<option value = 'python'> i = 12</option>
+<option value = 'other'> i == 12</option>
+
+</select>
+</label>
+<button type = 'submit' id = 'var_button'>Submit</button>
+
+</form>
+<div class ='result' id = 'var_result'></div>
+
+<!-- how to use input -->
+<form id  = 'input'>
+<label>
+How do you use input: 
+<select id = 'syntax_input'>
+<option value = 'printi'> print(input("What is your name: "))</option>
+<option value = 'python'> name = input("What is your name: ")</option>
+<option value = 'other'> filter (input("What is your name: "))</option>
+
+</select>
+</label>
+<button type = 'submit' id = 'input_button'>Submit</button>
+
+</form>
+<div class ='result' id = 'iresult'> </div>
+
+
+<!-- if form -->
+
+<form id = 'if_syntax'>
+<label>
+How to write if statements:
+<select id = 'if_options'>
+<option value = 'correct'>if 2 == 2 : <br> (indentation) print("Hello") </option>
+
+<option value = 'wrong1'> if 2 equals 2: <br> (indentation) print("Hello")</option>
+
+<option value = 'wrong2'> if 2 is equal to 2: <br>(indentation) print("Hello")</option>
+</select>
+
+</label>
+<button type = 'submit'>Submit</button>
+
+
+</form>
+<div class = 'result' id = 'if_result'></div>
+
+<!-- functions form-->
+<form id = 'func_syntax'>
+<label>
+How to write functions:
+<select id = 'func_options'>
+<option value = 'wrong1'> var add = function(a,b): <br> (identatation) return a + b </option>
+
+<option value = 'wrong2'> add(a,b): <br> (indentation) return a + b</option>
+
+<option value = 'correct'> def add(a,b): <br> (indentation) return a + b</option>
+</select>
+
+</label>
+<button type = 'submit'>Submit</button>
+
+
+</form>
+<div class = 'result' id = 'func_result'></div>
+
+
+<!-- list form -->
+<form id = 'list_syntax'>
+<label>
+How to make AND access lists:
+<select id = 'list_options'>
+<option value = 'wrong1'> aList = ['Daniel', "John", "William", "Philip"] </option>
+
+<option value = 'correct'> aList = ['Daniel', "John", "William", "Philip"] <br> print(aList) </option>
+
+<option value = 'wrong2'> aList = {'Daniel', "John", "William", "Philip"} <br> print(aList{})</option>
+
+<option value = 'wrong3'> aList = ('Daniel', "John", "William", "Philip") <br> print(aList())</option>
+</select>
+
+</label>
+<button type = 'submit'>Submit</button>
+
+
+</form>
+<div class = 'result' id = 'list_result'></div>
+
+<!-- while loop form -->
+<form id = 'while_syntax'>
+<label>
+How to make a program loop and print through 100 numbers (while loops):
+<select id = 'while_options'>
+<option value = 'correct'> i = 0 <br> while i == i: <br> (indentation) print(i) <br> i += 1 <br> if i == 101: <br> (identation) break </option>
+
+<option value = 'wrong'> i = 0 <br> while i == i: <br> (indentation) print(i) <br> i += 1  </option>
+
+<option value = 'wrong'> while number == 100: <br> (identation) print(number)</option>
+
+
+</select>
+
+</label>
+<button type = 'submit'>Submit</button>
+
+
+</form>
+<div class = 'result' id = 'while_result'></div>
+
+
+<!-- for loops form -->
+<form id = 'for_syntax'>
+<label>
+How to make a program loop and print through 100 numbers (for loops):
+<select id = 'for_options'>
+<option value = 'wrong'>  for i = 0; i == 1; i += 1: print(i)</option>
+
+<option value = 'wrong'> for i in 101: print(i)  </option>
+
+<option value = 'correct'> for i in range(1,101): print(i)</option>
+
+
+</select>
+
+</label>
+<button type = 'submit'>Submit</button>
+
+
+</form>
+<div class = 'result' id = 'for_result'></div>
+
+<div class ='result' id = 'score_result'></div>
+<!-- congratulations -->
+
+<h1 class = 'head' id = 'congrats'>Congratulations!</h1>
+
+<p>Now, you know the basics of Python, and can either review with my video tutorials, do my easy challenges, or learn advanced Python! You have come so far and I am sure that you will get the hang of Python(if you don't already have it)!!</p>
+
+<button type = 'submit' id = 'congrats-button'>Congratulations!</button>
+<br>
+<img id = 'congrats-pic' src = 'https://image.shutterstock.com/image-vector/congratulations-typography-lettering-handwritten-vector-260nw-1049534216.jpg' width = '300' alt = 'Congratulations!!'>
+
+<figure>
+<figcaption>Listen to me saying congratulations: </figcaption>
+<audio controls src = 'C:\Users\dgill\Desktop\Tech%20Fair%202020\congrats.WAV'></audio>
+
+
+</figure>
+
+<!-- help -->
+
+
+<!-- favorite form -->
+<form id = 'fav-form'>
+<label>What is your favorite: 
+<select name = 'favorite'>
+<option value = 'var-and-i'> Variables and Inputs </option>
+<option value = 'if'>If Statements</option>
+<option value = 'functions'>Functions</option>
+<option value = 'list'>Lists</option>
+<option value = 'loops'>Loops</option>
+
+
+</select>
+
+
+
+</label>
+
+<button type = 'submit'>Submit</button>
+</form>
+<div  id = 'fav-result'> </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 class = 'head' id = 'help'> Help</h1>
+<span id = 'commentthing'>
+<p> Who: <input id ='who-input'> </p>
+
+<p> What: <input id = 'what-input'> </p>
+
+
+
+</span>
+<span id = 'solutionthing'>
+<p> What comment, do you want to put a solution to (numbers and struggler is the 1st one and if you want to change the user then type:user1, then user 2, etc.): <input id = 'comment-number'> </p>
+
+
+
+<p> What do you want the solution to be: <input id ='solution-input'></p>
+
+<button type = 'submit' id = 'table-button'>Help Me!!</button>
+<button type = 'submit' id ='sub-button'>Submit Solution!!</button>
+</span>
+
+<!-- table-->
+<table id = 'help-table'>
+<thead>
+<tr>
+<th>From</th>
+<th>What is the problem?</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PythonCoder</td>
+<td> I need help with the while loops.</td>
+<td>Solution: Check out my video, or just use for loops.</td>
+</tr>
+<tr>
+<td> struggler</td>
+<td> I cannot get the hang of Python</td>
+<td id = '1'> </td>
+</tr>
+<tr>
+<td> harrypotter</td>
+<td> How do you do functions?</td>
+<td id = '2'> </td>
+
+
+</tr>
+
+<tr>
+<td id = 'who-table1'> </td>
+<td id = 'what-table1'> </td>
+<td id = 'user1'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table2'> </td>
+<td id = 'what-table2'> </td>
+<td id = 'user2'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table3'> </td>
+<td id = 'what-table3'> </td>
+<td id = 'user3'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table4'> </td>
+<td id = 'what-table4'> </td>
+<td id = 'user4'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table5'> </td>
+<td id = 'what-table5'> </td>
+<td id = 'user5'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table6'> </td>
+<td id = 'what-table6'> </td>
+<td id = 'user6'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table7'> </td>
+<td id = 'what-table7'> </td>
+<td id = 'user7'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table8'> </td>
+<td id = 'what-table8'> </td>
+<td id = 'user8'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table9'> </td>
+<td id = 'what-table'> </td>
+<td id = 'user9'> </td>
+</tr>
+<tr>
+<td id = 'who-table10'> </td>
+<td id = 'what-table10'> </td>
+<td id = 'user10'> </td>
+</tr>
+
+
+<tr>
+<td id = 'who-table11'> </td>
+<td id = 'what-table11'> </td>
+<td id = 'user11'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table12'> </td>
+<td id = 'what-table12'> </td>
+<td id = 'user12'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table13'> </td>
+<td id = 'what-table13'> </td>
+<td id = 'user13'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table14'> </td>
+<td id = 'what-table14'> </td>
+<td id = 'user14'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table15'> </td>
+<td id = 'what-table15'> </td>
+<td id = 'user15'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table16'> </td>
+<td id = 'what-table16'> </td>
+<td id = 'user16'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table17'> </td>
+<td id = 'what-table17'> </td>
+<td id = 'user17'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table18'> </td>
+<td id = 'what-table18'> </td>
+<td id = 'user18'> </td>
+</tr><tr>
+<td id = 'who-table19'> </td>
+<td id = 'what-table19'> </td>
+<td id = 'user19'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table20'> </td>
+<td id = 'what-table20'> </td>
+<td id = 'user20'> </td>
+</tbody>
+
+</table>
+
+
+
+
+<!-- Java(jQuery) -->
+<script src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+<script>
+var imgs = {
+	'var-and-i':'https://www.computerhope.com/jargon/s/standard-input.jpg',
+	'if':'http://everydayshouldbefun.com/wp-content/uploads/2017/07/IF-by-IFFT.png',
+	'functions':'https://thumbs.dreamstime.com/z/functions-cube-letters-words-computer-software-internet-categories-wooden-cubes-categorie-image-belongs-to-85641779.jpg',
+	'list':'https://media.wired.com/photos/5a0a38c1d07f6824ff44221b/master/w_2560%2Cc_limit/twitterlists-TA.jpg',
+	'loops':'https://www.loopforyoursoil.com/wp-content/uploads/2017/10/RGB_lg_logo_loop.png'
+	
+}
+
+$('#fav-form').on('submit', function(event){
+	event.preventDefault()
+	var $fav = $(this).find('[name = favorite]')
+	var fav = $fav.val()
+	var $img = $('<img>')
+	$img.width(200)
+	$img.attr('src', imgs[fav])
+	$img.appendTo('#fav-result')
+	
+})
+var number = 1
+$('#table-button').on('click', function(event){
+	
+	var who  = $('#who-input')
+	var $who = who.val()
+	
+	var what = $('#what-input')
+	var $what = what.val()
+	
+	$('#who-table' + number).text($who)
+	$('#what-table' + number).text($what)
+		number += 1
+	
+	
+	
+	
+})
+
+$('#sub-button').on('click', function(event){
+	var solution_number = $('#comment-number')
+	var $s_n = solution_number.val()
+	
+	var solution = $('#solution-input')
+	var $solution = solution.val()
+	
+	$('#' + $s_n).text("Solution: " + $solution)
+	
+})
+
+
+var score = 0
+var questions = 8
+//print form
+$('#print').on('submit', function(event){
+	event.preventDefault()
+	var answer = $('#syntax')
+	var $answer = answer.val()
+	if ($answer === 'Print') {
+		$('#print_result').text('Wrong. The correct syntax is: print("Text")');
+	}
+	if ($answer === 'print') {
+		$('#print_result').text('Correct!!')
+		score += 1
+	}
+	if ($answer === 'printn') {
+		$("#print_result").text('Wrong. The correct syntax is: print("Text")')
+		
+	}
+})
+//variable form 
+$('#variable').on('submit', function(event){
+	event.preventDefault()
+	var vanswer = $('#syntax_var')
+	var $vanswer = vanswer.val()
+	if ($vanswer === 'var') {
+		$("#var_result").text("Incorrect, the way to declare a variable in python is 1 = 12.")
+		
+	}
+	if($vanswer === 'python') {
+		score +=1
+		$('#var_result').text("Correct!!")
+		
+	}
+	if ($vanswer === 'other') {
+		$("#var_result").text("Incorrect, the way to declare a variable in python is 1 = 12.")
+	}
+})
+
+//input form
+$('#input').on('submit', function(event){
+	event.preventDefault()
+	var ianswer = $("#syntax_input")
+	var $ianswer = ianswer.val()
+	
+	if ($ianswer === 'printi') {
+		$("#iresult").text("This is correct, but I would not recommend to use until you get good at Python.")
+		score += 1
+		
+	}
+	if($ianswer === 'python') {
+		score +=1
+		$('#iresult').text("Correct!!")
+		
+	}
+	if ($ianswer === 'other') {
+		$("#iresult").text("Incorrect, the way to use input in python is name = input('What is your name: ')")
+	} 
+})
+
+//if form
+$('#if_syntax').on('submit', function(event){
+	event.preventDefault()
+	var ifanswer = $("#if_options")
+	var $ifanswer = ifanswer.val()
+	
+	if ($ifanswer === 'correct') {
+		$('#if_result').text("Correct")
+		score += 1 
+	} 
+	if ($ifanswer === 'wrong1') {
+		$('#if_result').text("Incorrect. The answer was the first one.")
+	}
+	if ($ifanswer === 'wrong2') {
+		$('#if_result').text("Incorrect. The answer was the first one.")
+	}
+	
+})
+
+//function form
+
+$('#func_syntax').on('submit', function(event){
+	event.preventDefault()
+	var fanswer = $("#func_options")
+	var $fanswer = fanswer.val()
+	if ($fanswer === 'wrong1') {
+		$('#func_result').text("Incorrect. The correct option is the last one.")
+	}
+	if ($fanswer === 'wrong2') {
+		$('#func_result').text("Incorrect. The correct on is the last one.")
+	}
+	if ($fanswer === 'correct') {
+		$('#func_result').text("Correct!!")
+		score += 1 
+	}
+	
+})
+
+$('#list_syntax').on('submit', function(){
+	event.preventDefault()
+	var lanswer = $("#list_options")
+	var $lanswer = lanswer.val()
+	if ($lanswer === 'wrong1') {
+		$("#list_result").text("Incorrect, the answer is the second one.")
+		
+	}
+	if ($lanswer === 'correct'){
+		score += 1 
+		$("#list_result").text("Correct!!")
+	}
+	if ($lanswer === 'wrong2') {
+		$("#list_result").text("Incorrect, the answer is the second one.")
+		
+	}
+	if ($lanswer === 'wrong3') {
+		$("#list_result").text("Incorrect, the answer is the second one.")
+	}
+	
+	
+})
+// while form 
+$("#while_syntax").on('submit', function(event) {
+	event.preventDefault()
+	var wanswer = $('#while_options')
+	var $wanswer = wanswer.val()
+	if ($wanswer === 'wrong') {
+		$('#while_result').text("Incorrect, the answer is the first one.")
+		
+	}
+	else {
+		score += 1 
+		$("#while_result").text("Correct!")
+	}
+		
+	
+})
+
+$("#for_syntax").on('submit', function(event) {
+	event.preventDefault()
+	var foranswer = $('#for_options')
+	var $foranswer = foranswer.val()
+	if ($foranswer === 'wrong') {
+		$('#for_result').text("Incorrect, the answer is the third one.")
+		
+	}
+	else {
+		score += 1 
+		$("#for_result").text("Correct!")
+	}
+	var result = score/questions * 100
+	$('#score_result').html("You got a " + score + " out of " + questions + ', that is a ' + result + '%' + "!" )
+
+})
+	$('#congrats-pic').hide()
+	//congratulations
+	$("#congrats-button").on('click', function(event){
+		$('#congrats-pic').fadeIn(3000)
+		
+	})
+
+</script>
+</body>
+</html>
+    
+    
+
