@@ -1,30 +1,10 @@
 <!DOCTYPE html>
-
-<html lang = "en">
-    <head>
-        <meta charset="utf-8">
-        <title>Soogle</title>
-   	<script type="text/javascript">
-<!--
-/**
-appsbar.com website redirection code. 
-Version: 1.1.0
-http://www.appsbar.com
-(c) Copyright 2012 appsbar.com	
-**/
-
-if (window.location.search.search(/ByPass8743ABs/) == -1) {
- 
-    if (navigator.userAgent.search(/Android/i) != -1 ||
-        navigator.userAgent.search(/iPhone/i) != -1 ||
-        navigator.userAgent.search(/iPad/i) != -1 ||
-        screen.width <= 699) {
-
-            window.location = 'http://www.appsbar.com/WebApp/?AppID=1302226&Device=Redirect' + '&HostSite=' + encodeURIComponent(window.location.href);
-	    </script>
-    <style>
-             
-        .typewriter {
+<html>
+<head>
+	<title>Python</title>
+	<link rel = 'icon' href = 'https://www.python.org/static/opengraph-icon-200x200.png' type = 'image/png'>
+	<style>
+	.typewriter {
 		text-align:center;
         overflow:hidden;
         border-right:.15em solid red;
@@ -54,7 +34,9 @@ if (window.location.search.search(/ByPass8743ABs/) == -1) {
             
           
         }
-		
+		#lblue {
+			color:rgb(76, 154, 232);
+		}
 		
 		.head{
             text-align:center;
@@ -62,33 +44,356 @@ if (window.location.search.search(/ByPass8743ABs/) == -1) {
             background-color:white;
             border:10px ridge rgb(74, 77, 79);
 			}
-        </style>
-         </head>
-    <body>
-	    <h1 class = 'typewriter'> Soogle</h1>
-	
-        <h2 class = 'head'>About</h2>
-		<p>Soogle is a non-profit company organized by St. Pauls' Episcopal School's Community Innovations class. We are making various products for a Biz Kids entrepreneurship event. At first my classmates did not like the name Soogle, but they came to their senses.</p>
-		
-		<h2 class = 'head'>App</h2>
-		<p>Currently, we have an app with memory games and short stories. We will be selling more products at the Biz Kids event. Come and support us! </p>
-<!--
-appsbar.com website widget code. 
-Version: 1.0.0
-http://www.appsbar.com
-(c) Copyright 2012 appsbar.com	
--->
-<iframe src="http://www.appsbar.com/WebApp/Facebook/?AppID=1302226&Device=Embed&Style=app" style="height:600px;width:350px;border:0px" scrolling="no">
-Your browser does not support iFrames please visit:<br><br>
-<a href="http://www.appsbar.com/WebApp/Facebook/?AppID=1302226&Device=Embed&Style=app">http://www.appsbar.com/WebApp/Facebook/?AppID=1302226&Device=Embed&Style=app</a>
-</iframe>
+		#python_img {
+			border: 0px ridge gold; 
+		}
+		ul {
+  			list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: #333;
+			}
 
-        <!-- JAVA -->
-        <!-- source for jQuery-->
-        <script src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
-        <script>
-         
-        </script>
-    </body>
+			li {
+			  float: left;
+			}
+
+			li a {
+			  display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+			  background-color: #111;
+			}
+			
+			#color-table {
+			position:absolute;
+            left:300px;
+			background-color:white;
+		}
+		#green {
+			color:#5CDB95;
+		}
+		#gb {
+			color:#41B3A3;
+		}
+		#help-table {
+			position:absolute;
+            left:300px;
+			background-color:white;
+		
+	}
+	
+	</style>
+</head>
+
+<body>
+<h1 id = 'header' class = 'typewriter'>Python</h1>
+<br>
+<ul id = 'pages' >
+	<li class = 'toc' > <a href = '#what'> What is Python (this page)? </a> </li>
+	<li class = 'toc' ><a href = 'C:\Users\dgill\Desktop\Tech%20Fair%202020\installingPython.html' > How to install Python?</a> </li>
+	<li class = 'toc' ><a href = 'C:\Users\dgill\Desktop\Tech%20Fair%202020\pythonbasics.html'> Basics of Python</a></li>
+	<li class = 'toc'> <a href = 'C:\Users\dgill\Desktop\Tech%20Fair%202020\easy_python_challenges.html'>Python Challenges (easy)</a></li>
+	<li class = 'toc'><a href = 'C:\Users\dgill\Desktop\Tech%20Fair%202020\easyPythonVideo.html' >Video Tutorials (easy)</a></li>
+	<li class = 'toc'>  <a href = 'C:\Users\dgill\Desktop\Tech%20Fair%202020\PythonSources.html' >Sources</a> </li>
+	</ul>
+	<br>
+	<ul>
+	<li class = 'toc' > <a href = 'what'>What is Python?</a></li>
+	<li class = 'toc'> <a href = '#who'>Who created Python?</a> </li>
+	<li class = 'toc'> <a href = '#used'> What is Python used for?</a></li>
+	<li class = 'toc'><a href ='#colors'>Color Coding</a></li>
+	<li class = 'toc'> <a href = '#help'>Help</a></li>
+	</ul> 
+	
+	
+	
+	
+	
+	<!-- What is Python-->
+	
+	<h1 class = 'head' id = 'what'> What is Python?</h1>
+	<p id = 'what-info'>Python is a high-level programming language used to store and use data. Python's easy to use syntax attracts many coders looking for a language.</p>
+	<button type = 'submit' id = 'pythonbutton'>Python it!</button>
+	<br>
+	<img id = 'python_img' src = 'https://www.python.org/static/opengraph-icon-200x200.png' alt = 'The logo of python' width = '0px'>
+	
+	<!-- Who created Python -->
+	<h1 class = 'head' id = 'who'> Who created Python?</h1>
+	<p id = 'who-info'>Python was created by Guido van Rossum in 1989.</p>
+	<img src = 'https://images.computerhistory.org/fellows/gvanrossum.jpg' alt = 'picture of Guido van Rossum' width = '250px'>
+	
+	<!-- what is python used for -->
+	<h1 class = 'head' id = 'used'>What is Python used for?</h1>
+	
+	<p>Web Development</p>
+	<p>Data Science</p>
+	<p>Scripting</p>
+	
+	<center>
+	<h3>Web Development</h3>
+	</center>
+	<p>Python is used for back-end web development, the code on your server instead of the users' server.</p>
+	
+	<center>
+	<h3>Data Science</h3>
+	</center>
+	<p>An example of data science is if you wanted to make a program that tells what the image shown is. You could say if it has light-brown hair it is a dog, or you could use machine learning. In simpler terms, that is where you give a bunch of pictures of a dog to a machine learning algorithm and the machine could recognize dogs.</p>
+	
+	<center>
+	<h3>Scripting</h3>
+	</center>
+	<p>Scripting is writing programs to do tasks that you could do manually, but is easier with code.</p>
+	<!-- color coding -->
+	<h1 class = 'head' id = 'colors'>Color Coding</h1>
+	<table id ='color-table'>
+	<thead>
+	<tr>
+	<th> Color</th>
+	<th> What it is used for</th>
+	</tr>
+	
+	
+	</thead>
+	<tbody>
+	<tr>
+	<td> <span id ='lblue'>Light Blue</span></td>
+	<td>Home Page, Non-Video Tutorials, Sources, and Installing Python</td>
+	</tr>
+	<tr>
+	<td><span id = 'green'>Green</span></td>
+	<td>Challenges(easy and hard)</td>
+	</tr>
+	<tr> 
+	<td> <span id = 'gb'>Green Blue</span> </td>
+	
+	<td> Video Tutorials</td>
+	</tr>
+	</tbody>
+	
+	</table>
+	<br>
+	<br>
+	<br>
+	<!-- help -->
+	<h1 class = 'head' id = 'help'> Help</h1>
+	<p> Who: <input id ='who-input'> </p>
+
+<p> What: <input id = 'what-input'> </p>
+
+
+
+<p> What comment, do you want to put a solution to (help me is 1, heeeeeeeeeelp is 2, etc. To submit a solution to a user's problem, type user1, user2, etc.): <input id = 'comment-number'> </p>
+
+<p> What do you want the solution to be: <input id ='solution-input'></p>
+
+<button type = 'submit' id = 'table-button'>Help Me!!</button>
+<button type = 'submit' id = 'sub-button'>Submit Solution!!</button>
+<table id = 'help-table'>
+<thead>
+<tr>
+<th>From</th>
+<th>What is the problem?</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PythonCoder</td>
+<td> I need help with the functions.</td>
+<td>Solution: Check out my video, or <a href = "mailto:dgill@stpaulsmobile.net?Subject=Help" target = "_top" >email me.</a> </td>
+</tr>
+<tr>
+<td> help me </td>
+<td> I do not get how to do if statements</td>
+<td id = '1'> </td>
+</tr>
+<tr>
+<td> heeeeeeeeeeeeeelp</td>
+<td> How do you do loops?</td>
+<td id = '2'> </td>
+
+
+</tr>
+
+<tr>
+<td id = 'who-table1'> </td>
+<td id = 'what-table1'> </td>
+<td id = 'user1'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table2'> </td>
+<td id = 'what-table2'> </td>
+<td id = 'user2'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table3'> </td>
+<td id = 'what-table3'> </td>
+<td id = 'user3'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table4'> </td>
+<td id = 'what-table4'> </td>
+<td id = 'user4'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table5'> </td>
+<td id = 'what-table5'> </td>
+<td id = 'user5'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table6'> </td>
+<td id = 'what-table6'> </td>
+<td id = 'user6'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table7'> </td>
+<td id = 'what-table7'> </td>
+<td id = 'user7'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table8'> </td>
+<td id = 'what-table8'> </td>
+<td id = 'user8'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table9'> </td>
+<td id = 'what-table9'> </td>
+<td id = 'user9'> </td>
+</tr>
+<tr>
+<td id = 'who-table10'> </td>
+<td id = 'what-table10'> </td>
+<td id = 'user10'> </td>
+</tr>
+
+
+<tr>
+<td id = 'who-table11'> </td>
+<td id = 'what-table11'> </td>
+<td id = 'user11'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table12'> </td>
+<td id = 'what-table12'> </td>
+<td id = 'user12'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table13'> </td>
+<td id = 'what-table13'> </td>
+<td id = 'user13'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table14'> </td>
+<td id = 'what-table14'> </td>
+<td id = 'user14'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table15'> </td>
+<td id = 'what-table15'> </td>
+<td id = 'user15'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table16'> </td>
+<td id = 'what-table16'> </td>
+<td id = 'user16'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table17'> </td>
+<td id = 'what-table17'> </td>
+<td id = 'user17'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table18'> </td>
+<td id = 'what-table18'> </td>
+<td id = 'user18'> </td>
+</tr><tr>
+<td id = 'who-table19'> </td>
+<td id = 'what-table19'> </td>
+<td id = 'user19'> </td>
+</tr>
+
+<tr>
+<td id = 'who-table20'> </td>
+<td id = 'what-table20'> </td>
+<td id = 'user20'> </td>
+</tr>
+</tbody>
+
+</table>
+	
+<!-- Java(jQuery) -->
+<script src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+
+
+<script> 
+var number = 1
+$('#table-button').on('click', function(event){
+	
+	var who  = $('#who-input')
+	var $who = who.val()
+	
+	var what = $('#what-input')
+	var $what = what.val()
+	
+	$('#who-table' + number).text($who)
+	$('#what-table' + number).text($what)
+		number += 1
+	
+	
+	
+	
+})
+
+$('#sub-button').on('click', function(event){
+	var solution_number = $('#comment-number')
+	var $s_n = solution_number.val()
+	
+	var solution = $('#solution-input')
+	var $solution = solution.val()
+	
+	$('#' + $s_n).text("Solution: " + $solution)
+	
+})
+//python logo function 
+
+//hides image of python logo
+$('#python_img').hide()
+//when button is pressed do the code inside
+$('#pythonbutton').on('click', function(event){
+	//animates the picture in 
+	$('#python_img').animate({
+		width: '200px',
+		borderWidth: '10px'
+	})
+	
+}) 
+//end python logo function
+
+
+
+
+</script>
+</body>
 </html>
-<!-- Thank you for Watching!-->
